@@ -46,7 +46,6 @@ function Todo() {
       }
       return todo
     })
-
     setTodos(complete)
   }
 
