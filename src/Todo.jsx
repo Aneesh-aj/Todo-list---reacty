@@ -3,7 +3,6 @@ import React from 'react'
 import { FiEdit } from 'react-icons/fi'
 import { MdDelete } from "react-icons/md"
 import { IoMdDoneAll } from 'react-icons/io'
-
 import './Todo.css'
 
 function Todo() {
@@ -32,7 +31,6 @@ function Todo() {
   }
 
   const inputRef = useRef('null')
-
   useEffect(() => {
     inputRef.current.focus
   })
@@ -53,11 +51,9 @@ function Todo() {
   }
 
   const onEdit = (id) => {
-
     const edittodo = Todos.find((todo) => todo.id === id)
     setTodo(edittodo.list)
     setEditId(edittodo.id)
-
   }
 
 
